@@ -1,0 +1,348 @@
+body{
+    background-color: white;
+    margin: 10px;
+    border: 2px solid black;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #D6C7AE;
+    color: black;
+    
+    font-family: cursive;
+}
+a{
+    color: black;
+    ;
+}
+.header{
+    position: relative;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 25px ;
+    transition: 0.3s;
+}
+
+.navigation{
+    display:flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+   
+}
+.menu li{
+    list-style-type: none;
+}
+.menu li a {
+    color:black;
+    text-decoration:none;
+    display: block;
+    padding: 40px 25px;
+    font-size: 10px;
+    line-height: 1;
+    transition:0.3s;
+}
+.menu li a:hover{
+    box-shadow: 0 -5px 0px #fff inset,
+    500px 0 0  rgba(255,255,255,0.03) inset;
+    padding:35px 25px 45px 25px;
+
+}
+
+.hamburger {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    background: black;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 30px;
+    
+}
+
+.hamburger:before {
+    top: -10px;
+   
+}
+
+.hamburger:after {
+    top: 10px;
+    
+}
+
+
+.toggle-menu{
+    position:absolute;
+    width:30px;
+    height: 100%;
+    z-index:3;
+    cursor:pointer;
+    opacity:0;
+
+}
+
+.navigation input:checked ~ .hamburger{
+    background: transparent;
+}
+.navigation input:checked ~ .hamburger:before{
+    top:0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .hamburger:after{
+    top:0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+.navigation input:checked~ .menu{
+    right:0;
+    box-shadow: -20px 0 40px rgba(255,255,255,0.3);
+
+}
+@media screen  and (max-width: 9000px){
+    .hamburger, .toggle-menu{
+        display:block;
+    }
+    .header{
+        padding:10px ;
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: -300px;
+        background-color:#E1C78F;
+        width: 200px;
+        height: 100%;
+        padding-top: 65px;
+    }
+    .menu li{
+        width:100%;
+    }
+    .menu li a,
+    .menu li a:hover {
+        padding: 30px;
+        font-size: 20px;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.1)
+        inset;
+    }
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    max-width: 100%; 
+    padding: 20px;
+    justify-content: right;
+  
+}
+
+
+.main {
+    text-align: center;
+}
+/*home*/
+
+header,nav{
+    text-align: center;
+}
+.intro{
+    text-align: center;
+}
+.photo1{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    
+    margin-left: 5px;
+}
+h2{
+    color: black;
+}
+.horizontal-line{
+    background-color: black;
+    width: 100%;
+}
+
+
+/*about me*/
+
+header,nav{
+    text-align: center;
+}
+.photo2{
+    width: 280px;
+    height: 450px;
+    border: 1px solid black;
+    
+    margin-left: 5px;
+}
+/*experience & skills*/
+h2{
+    text-align: left;
+
+}
+.hardworkingphoto{
+    width: 150px;
+    height: 250px;
+    border: 1px solid black;
+    margin-left: 12px;
+}
+#work{
+    float: right;
+    margin-top: 50px;
+    margin-right: 5px;
+}
+header,nav{
+    text-align: center;
+}
+.venn{
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+}
+.experience{
+    display: flex;
+    text-align: left;
+    margin-left: 12px;
+    font-size: 0.8em;
+
+}
+
+.skills{
+    text-align: left;
+    align-self: start;
+    margin-left: 12px;
+
+}
+/*projects*/
+
+header,nav{
+    text-align: center;
+}
+  
+.image-wrapper {
+
+    flex-direction: column;
+
+}
+.project1{
+    flex: 1;
+    width: 100px;
+    height: 200px;
+    float: left;
+    
+}
+img{
+    width:100px;
+    height:200px;
+    margin-top: 30px;
+    margin-left: 0;
+    
+}
+.project2{
+    flex: 1;
+    width: 100px;
+    height: 200px;
+    float: right;
+    
+}
+.project3{
+    flex: 1;
+    width: 100px;
+    height: 200px;
+    margin-top: 150px;
+    float: left;
+    
+}
+
+.video{
+    flex: 1;
+    width:100px;
+    height: 200px;
+    margin-top: 150px;
+    float: right;
+}
+.image_container{
+    display:flex;
+    flex-direction: column;
+}
+.row1{
+    display: flex;
+    gap:10px;
+    margin-right: 0;
+}
+.row2{
+    display: flex;
+    gap:10px
+    
+}
+header,nav{
+    text-align: center;
+}
+.horizontal-line{
+    background-color: black;
+    width: 100%;
+}
+/*contact me*/
+
+header,nav{
+    text-align: center;
+}
+.phoneicon{
+    width: 25px;
+    height: 25px;
+   
+}
+.telegramicon{
+    width: 25px;
+    height: 25px;
+    margin-top: 200px;
+    
+}
+.instagramicon{
+    width: 25px;
+    height: 25px;
+    margin-top: 200px;
+}
+.gmailicon{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.table{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 450px;
+    height: 350px;
+    font-size: 1em;
+    padding-left: 80px;
+}
