@@ -6,14 +6,21 @@ body{
 }
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    text-align: center;
+    text-align:center;
     background-color: #D6C7AE;
     color: black;
-    
+    width: auto;
     font-family: cursive;
 }
+
+
+
+
+/*------------------------------------*\
+  #SECTION-Hamburger
+\*------------------------------------*/
 a{
     color: black;
     ;
@@ -43,7 +50,7 @@ a{
    
 }
 .menu li{
-    list-style-type: none;
+    list-style-type:none;
 }
 .menu li a {
     color:black;
@@ -51,7 +58,7 @@ a{
     display: block;
     padding: 40px 25px;
     font-size: 10px;
-    line-height: 1;
+    line-height: 3;
     transition:0.3s;
 }
 .menu li a:hover{
@@ -167,7 +174,15 @@ a{
 .main {
     text-align: center;
 }
-/*home*/
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-HOME
+\*------------------------------------*/
+
 
 header,nav{
     text-align: center;
@@ -175,11 +190,9 @@ header,nav{
 .intro{
     text-align: center;
 }
-.photo1{
-    width: 300px;
-    height: 450px;
-    border: 1px solid black;
-    
+.photo-1{
+    width: 94%;
+    height: 100%;
     margin-left: 5px;
 }
 h2{
@@ -191,27 +204,30 @@ h2{
 }
 
 
-/*about me*/
+/*------------------------------------*\
+  #SECTION-ABOUT ME
+\*------------------------------------*/
+
 
 header,nav{
     text-align: center;
 }
-.photo2{
+.photo-2{
     width: 280px;
     height: 450px;
-    border: 1px solid black;
-    
     margin-left: 5px;
 }
-/*experience & skills*/
+/*------------------------------------*\
+  #SECTION-EXPERIENCE & SKILLS
+\*------------------------------------*/
+
 h2{
     text-align: left;
 
 }
-.hardworkingphoto{
+.hardworking-photo{
     width: 150px;
     height: 250px;
-    border: 1px solid black;
     margin-left: 12px;
 }
 #work{
@@ -241,7 +257,10 @@ header,nav{
     margin-left: 12px;
 
 }
-/*projects*/
+/*------------------------------------*\
+  #SECTION-PROJECTS
+\*------------------------------------*/
+
 
 header,nav{
     text-align: center;
@@ -250,9 +269,8 @@ header,nav{
 .image-wrapper {
 
     flex-direction: column;
-
 }
-.project1{
+.project-1{
     flex: 1;
     width: 100px;
     height: 200px;
@@ -266,14 +284,14 @@ img{
     margin-left: 0;
     
 }
-.project2{
+.project-2{
     flex: 1;
     width: 100px;
     height: 200px;
     float: right;
     
 }
-.project3{
+.project-3{
     flex: 1;
     width: 100px;
     height: 200px;
@@ -286,19 +304,19 @@ img{
     flex: 1;
     width:100px;
     height: 200px;
-    margin-top: 150px;
+    margin-top: 100px;
     float: right;
 }
-.image_container{
+.image-container{
     display:flex;
     flex-direction: column;
 }
-.row1{
+.row-1{
     display: flex;
     gap:10px;
     margin-right: 0;
 }
-.row2{
+.row-2{
     display: flex;
     gap:10px
     
@@ -310,28 +328,31 @@ header,nav{
     background-color: black;
     width: 100%;
 }
-/*contact me*/
+/*------------------------------------*\
+  #SECTION-CONTACT ME
+\*------------------------------------*/
+
 
 header,nav{
     text-align: center;
 }
-.phoneicon{
+.phone-icon{
     width: 25px;
     height: 25px;
    
 }
-.telegramicon{
+.telegram-icon{
     width: 25px;
     height: 25px;
     margin-top: 200px;
     
 }
-.instagramicon{
+.instagram-icon{
     width: 25px;
     height: 25px;
     margin-top: 200px;
 }
-.gmailicon{
+.gmail-icon{
     width: 25px;
     height: 25px;
     margin-left: 20px;
@@ -345,4 +366,525 @@ header,nav{
     height: 350px;
     font-size: 1em;
     padding-left: 80px;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-PHONE PORTRAIT MODE
+\*------------------------------------*/
+
+@media screen and (max-width: 600px){
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+
+    
+    .all{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .photo-1{
+        width: 250px;
+        height: 350px;
+        padding-left: 30px;
+    }
+    .audio-intro{
+        text-align: center;
+        padding-top: 10px;
+    }
+/*------------------------------------*\
+    #ABOUT ME
+\*------------------------------------*/
+
+    .image-introduction{
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-2{
+        height: 450px;
+        align-items: center;
+        margin:auto;
+        padding-top: 15px;
+       
+    }
+    .introduction{
+        text-align: center;
+    }
+/*------------------------------------*\
+    #EXPERIENCE & SKILLS
+\*------------------------------------*/
+
+    .experience, .exp{
+        font-size:medium;
+        text-align: left;
+    }
+    .skills, h2{
+        text-align: center;
+    }
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-1{
+        width: 150px;
+        height: 400px;
+        margin-left: 40px;
+    }
+    .project-2{
+        width: 150px;
+        height: 400px;
+    }
+    .project-3{
+        width: 150px;
+        height: 400px;
+        margin-top: 60px;
+        margin-left: 40px ;
+    }
+    .video{
+        width: 150px;
+        height: 400px;
+        margin-top: 60px; 
+    }
+    
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-PHONE LANDSCAPE MODE
+\*------------------------------------*/
+
+@media screen and (min-width: 600px){
+    .menu{
+        display: block;
+        justify-content: start;
+        flex-direction: column;
+        align-items:flex-start;
+        position: absolute;
+        top: 0;
+        right: 50px;
+        background-color:#E1C78F;
+        width: 130px;
+        height: 550px;
+        padding-top: 0px;
+        opacity: 1;
+        transition: opacity 0.5s;
+        background-color: 0.5s;
+        box-shadow: 0.5s;
+
+    }
+    .menu:hover {
+        background-color: #B78E4F;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) inset;
+    }
+    .menu li{
+        width:100%;
+        height: fit-content;
+    }
+    .menu li a,
+    .menu li a:hover {
+        padding: 20px;
+        font-size: 18px;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.1)
+        inset;
+    }
+    .hamburger {
+        display: none;
+    }
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+
+    .all{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .photo-1{
+        width: 220px;
+        height: 350px;
+        padding-left: 20px;
+        margin-right: 50px;
+    }
+    .audio-intro{
+        text-align: center;
+        padding-top: 10px;
+    }
+/*------------------------------------*\
+    #ABOUT ME
+\*------------------------------------*/
+
+    .image-introduction{
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-2{
+        align-items: center;
+        margin:auto;
+        padding-top: 5px;
+    }
+    .introduction{
+        text-align: center;
+        font-size: 1rem;
+    }
+/*------------------------------------*\
+    #EXPERIENCE & SKILLS
+\*------------------------------------*/
+
+    .experience, .exp{
+        font-size:0.8rem;
+        text-align: left;
+        margin-right: 200px;
+    }
+    .skills, h2{
+        text-align: center;
+    }
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+
+    .image-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-1{
+        width: 200px;
+        height: 400px;
+    }
+    .project-2{
+        width: 200px;
+        height: 400px;
+    }
+    .project-3{
+        width: 200px;
+        height: 400px;
+        margin-top: 100px;
+    }
+    .video{
+        width: 200px;
+        height: 400px; 
+    }
+/*------------------------------------*\
+    #CONTACT ME
+\*------------------------------------*/
+
+    .table {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .table tr {
+        display: flex;
+        justify-content: space-between;
+    }
+    .table td {
+        padding: 5px;
+    }
+
+    .table .phone-email, 
+    .table .telegram-insta {
+        width: 100%;
+    }
+
+    .table .phone-icon, 
+    .table .gmail-icon {
+        margin-right: 10px;
+    }
+
+    .table .telegram-icon, 
+    .table .instagram-icon {
+        margin-left: 10px;
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+  #SECTION-TABLET
+\*------------------------------------*/
+
+@media screen and (min-width: 768px){
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+
+    body{
+        height: 100%;
+    }
+    .all{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .nav{
+        align-items: end;
+    }
+
+    .photo-1{
+        width: 220px;
+        height: 300px;
+        padding-top: 30px;
+        margin-right: 170px;
+    }
+    .audio-intro{
+        padding-top: 30px;
+        padding-right: 40px;
+    }
+    .intro{
+        text-align: left; 
+    }
+    .foot{
+        text-align: center;
+    }
+/*------------------------------------*\
+    #ABOUT ME
+\*------------------------------------*/
+    .image-introduction{
+        display: flex;
+        flex-direction: row;
+    }
+    .photo-2{
+        width: 250px;
+        height: 350px;
+
+    }
+    .introduction{
+        text-align: center;
+        width: 70%;
+        padding-top: 50px;
+        padding-left: 80px;
+        margin-right: 200px;
+    }
+/*------------------------------------*\
+    #EXPERIENCE & SKILLS
+\*------------------------------------*/
+    .experience, .exp{
+        font-size:0.8rem;
+        text-align: left;
+        margin-right: 200px;
+    }
+
+    .skills, h2{
+        text-align: center;
+    }
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+    .img{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .img, .project-1, .project-2, .project-3{
+        width: 150px;
+        height: 300px;
+        margin-left: 60px;
+    }   
+   .image-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+   }
+   .project-3{
+        margin-top: 30px;
+   }
+   .youtube-vid{
+        float: left;
+        text-align: center;
+        width: 250px;
+        height: 900px;
+   }
+   .caption{
+        margin-right: 100px;
+   }
+   .video{
+        width: 400px;
+        height: 400px;
+        margin-top: 400px;
+        margin-right: 300px;
+   }
+   
+/*------------------------------------*\
+    #CONTACT ME
+\*------------------------------------*/
+    .table {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    }
+    .table tr {
+    display: flex;
+    justify-content: space-between;
+    }
+    .table td {
+    padding: 5px;
+    }
+    .table .phone-email,
+    .table .telegram-insta {
+    width: 100%;
+    }
+    .table .phone-icon,
+    .table .gmail-icon {
+    margin-right: 10px;
+    }
+    .table .telegram-icon,
+    .table .instagram-icon {
+    margin-left: 10px;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #SECTION- DESKTOP
+\*------------------------------------*/
+
+@media screen and (min-width: 1024px){
+/*------------------------------------*\
+    #HOME
+\*------------------------------------*/
+    body{
+        height: 100%;
+    }
+    .all{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    
+    .nav{
+        align-items: end;
+    }
+
+    .photo-1{
+        width: 300px;
+        height: 350px;
+    }
+    .audio-intro{
+        padding-top: 30px;
+        padding-right: 40px;
+    }
+    .intro{
+        text-align: left; 
+    }
+    .foot{
+        text-align: center;
+    }
+/*------------------------------------*\
+    #ABOUT ME
+\*------------------------------------*/
+    .image-introduction{
+        display: flex;
+        flex-direction: row;
+    }
+    .photo-2{
+        width: 350px;
+        height: 450px;
+
+    }
+    .introduction{
+        text-align: center;
+        width: 70%;
+        padding-top: 50px;
+        padding-left: 80px;
+    }
+/*------------------------------------*\
+    #EXPERIENCE & SKILLS
+\*------------------------------------*/
+    .experience-skills{
+        display: flex;
+        flex-direction: row;
+    }
+    .experience{
+        display: flex;
+        flex-direction: column;
+        padding-right: 5px;
+        font-size: medium;
+    }
+   .hardworking-photo{
+        padding-left: 70px;
+        width: 200px;
+        height: 200px;
+   }
+   .venn{
+        margin-right: 200px;
+   }
+   .skills, h2{
+        text-align: left;
+   }
+/*------------------------------------*\
+    #PROJECTS
+\*------------------------------------*/
+   
+   .img{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+   }
+   .image-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+   }
+   .img,.project-1, .project-2, .project-3{
+        width: 200px;
+        height: 400px;
+        margin-left: 70px;
+   }
+   .project-3{
+        margin-top: 30px;
+   }
+   .youtube-vid{
+        float: left;
+        text-align: center;
+        width: 200px;
+        height: 1000px;
+   }
+   .caption{
+        width: 2px;
+   }
+   .video{
+        width: 400px;
+        height: 400px;
+        margin-top: 500px;
+        margin-right: 300px;
+   }
+/*------------------------------------*\
+    #CONTACT ME
+\*------------------------------------*/
+   .table tr {
+    display: flex;
+    justify-content: space-between;
+    }
+    .table td {
+    padding: 5px;
+    }
+    .table .phone-email,
+    .table .telegram-insta {
+    width: 100%;
+    }
+    .table .phone-icon,
+    .table .gmail-icon {
+    margin-right: 10px;
+    }
+    .table .telegram-icon,
+    .table .instagram-icon {
+    margin-left: 10px;
+    }
 }
