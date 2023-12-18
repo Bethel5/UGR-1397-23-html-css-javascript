@@ -17,15 +17,14 @@ body{
 
 
 
-
 /*------------------------------------*\
   #SECTION-Hamburger
 \*------------------------------------*/
-a{
+.container__header__navigation__menu ,a{
     color: black;
     ;
 }
-.header{
+.container__header{
     position: relative;
     width:100%;
     display:flex;
@@ -35,12 +34,12 @@ a{
     transition: 0.3s;
 }
 
-.navigation{
+.container__header__navigation{
     display:flex;
     justify-content:space-between ;
     align-items: center;
 }
-.menu {
+.container__header__navigation__menu {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -49,10 +48,10 @@ a{
     transition: 0.5s;
    
 }
-.menu li{
+.container__header__navigation__menu li{
     list-style-type:none;
 }
-.menu li a {
+.container__header__navigation__menu li a {
     color:black;
     text-decoration:none;
     display: block;
@@ -61,14 +60,14 @@ a{
     line-height: 3;
     transition:0.3s;
 }
-.menu li a:hover{
+.container__header__navigation__menu li a:hover{
     box-shadow: 0 -5px 0px #fff inset,
     500px 0 0  rgba(255,255,255,0.03) inset;
     padding:35px 25px 45px 25px;
 
 }
 
-.hamburger {
+.container__header__navigation__hamburger {
     position: absolute;
     width: 30px;
     height: 4px;
@@ -77,11 +76,11 @@ a{
     cursor: pointer;
     z-index: 10;
     transition: 0.3s;
-    margin-right: 10px;
+    margin-left:-35px;
 }
 
-.hamburger:before,
-.hamburger:after {
+.container__header__navigation__hamburger:before,
+.container__header__navigation__hamburger:after {
     content: "";
     position: absolute;
     height: 4px;
@@ -92,18 +91,17 @@ a{
     
 }
 
-.hamburger:before {
+.container__header__navigation__hamburger:before {
     top: -10px;
    
 }
 
-.hamburger:after {
+.container__header__navigation__hamburger:after {
     top: 10px;
     
 }
 
-
-.toggle-menu{
+.container__header__navigation__toggle-menu{
     position:absolute;
     width:30px;
     height: 100%;
@@ -113,32 +111,32 @@ a{
 
 }
 
-.navigation input:checked ~ .hamburger{
+.container__header__navigation input:checked ~ .container__header__navigation__hamburger{
     background: transparent;
 }
-.navigation input:checked ~ .hamburger:before{
+.container__header__navigation input:checked ~ .container__header__navigation__hamburger:before{
     top:0;
     transform: rotate(-45deg);
     width: 30px;
 }
-.navigation input:checked ~ .hamburger:after{
+.container__header__navigation input:checked ~ .container__header__navigation__hamburger:after{
     top:0;
     transform: rotate(45deg);
     width: 30px;
 }
-.navigation input:checked~ .menu{
+.container__header__navigation input:checked~ .container__header__navigation__menu{
     right:0;
     box-shadow: -20px 0 40px rgba(255,255,255,0.3);
 
 }
 @media screen  and (max-width: 9000px){
-    .hamburger, .toggle-menu{
+    .container__header__navigation__hamburger, .container__header__navigation__toggle-menu{
         display:block;
     }
-    .header{
-        padding:10px ;
+    .container__header{
+        padding:0px ;
     }
-    .menu{
+    .container__header__navigation__menu{
         justify-content: start;
         flex-direction: column;
         align-items: center;
@@ -146,17 +144,17 @@ a{
         top: 0;
         right: -300px;
         background-color:#E1C78F;
-        width: 200px;
-        height: 100%;
-        padding-top: 65px;
+        width: 150px;
+        height: 550px;
+        padding-top: 5px;
     }
-    .menu li{
+    .container__header__navigation__menu li{
         width:100%;
     }
-    .menu li a,
-    .menu li a:hover {
-        padding: 30px;
-        font-size: 20px;
+    .container__header__navigation__menu li a,
+    .container__header__navigation__menu li a:hover {
+        padding: 20px;
+        font-size: 18px;
         box-shadow: 0 1px 0 rgba(255,255,255,0.1)
         inset;
     }
@@ -170,11 +168,9 @@ a{
   
 }
 
-
 .main {
     text-align: center;
 }
-
 
 
 
@@ -183,36 +179,33 @@ a{
   #SECTION-HOME
 \*------------------------------------*/
 
-
-header,nav{
+.container__header, .container__header__navigation{
     text-align: center;
 }
-.intro{
+.container__all__audio-intro__intro{
     text-align: center;
 }
-.photo-1{
+.container__all__photo-1{
     width: 94%;
     height: 100%;
     margin-left: 5px;
 }
-h2{
+.container__header{
     color: black;
 }
-.horizontal-line{
+.container__horizontal-line{
     background-color: black;
     width: 100%;
 }
-
 
 /*------------------------------------*\
   #SECTION-ABOUT ME
 \*------------------------------------*/
 
-
-header,nav{
+.container__header,.container__header__navigation{
     text-align: center;
 }
-.photo-2{
+.container__image-introduction__photo-2{
     width: 280px;
     height: 450px;
     margin-left: 5px;
@@ -221,11 +214,11 @@ header,nav{
   #SECTION-EXPERIENCE & SKILLS
 \*------------------------------------*/
 
-h2{
+.container__header, h2{
     text-align: left;
 
 }
-.hardworking-photo{
+.container__experience-skills__experience__hardworking-photo{
     width: 150px;
     height: 250px;
     margin-left: 12px;
@@ -235,15 +228,15 @@ h2{
     margin-top: 50px;
     margin-right: 5px;
 }
-header,nav{
+.container__header, .container__header__navigation{
     text-align: center;
 }
-.venn{
+.container__experience-skills__skills__venn{
     width: 300px;
     height: 250px;
     border: 1px solid black;
 }
-.experience{
+.container__experience-skills__experience{
     display: flex;
     text-align: left;
     margin-left: 12px;
@@ -251,7 +244,7 @@ header,nav{
 
 }
 
-.skills{
+.container__experience-skills__skills{
     text-align: left;
     align-self: start;
     margin-left: 12px;
@@ -261,37 +254,32 @@ header,nav{
   #SECTION-PROJECTS
 \*------------------------------------*/
 
-
-header,nav{
+.container__header,.container__header__navigation{
     text-align: center;
 }
-  
-.image-wrapper {
 
-    flex-direction: column;
-}
-.project-1{
+.container__image-container__row-1__img__project-1{
     flex: 1;
     width: 100px;
     height: 200px;
     float: left;
     
 }
-img{
+.container__image-container__row-1__img, .container__image-container__row-2__img{
     width:100px;
     height:200px;
     margin-top: 30px;
     margin-left: 0;
     
 }
-.project-2{
+.container__image-container__row-1__img__project-2{
     flex: 1;
     width: 100px;
     height: 200px;
     float: right;
     
 }
-.project-3{
+.container__image-container__row-2__img__project-3{
     flex: 1;
     width: 100px;
     height: 200px;
@@ -300,31 +288,31 @@ img{
     
 }
 
-.video{
+.container__image-container__row-2__youtube-vid__video{
     flex: 1;
     width:100px;
     height: 200px;
     margin-top: 100px;
     float: right;
 }
-.image-container{
+.container__image-container{
     display:flex;
     flex-direction: column;
 }
-.row-1{
+.container__image-container__row-1{
     display: flex;
     gap:10px;
     margin-right: 0;
 }
-.row-2{
+.container__image-container__row-2{
     display: flex;
     gap:10px
     
 }
-header,nav{
+.container__header,.container__header__navigation{
     text-align: center;
 }
-.horizontal-line{
+.container__horizontal-line{
     background-color: black;
     width: 100%;
 }
@@ -332,33 +320,32 @@ header,nav{
   #SECTION-CONTACT ME
 \*------------------------------------*/
 
-
-header,nav{
+.container__header,.container__header__navigation{
     text-align: center;
 }
-.phone-icon{
+.container__table__phone-email__phone-icon{
     width: 25px;
     height: 25px;
    
 }
-.telegram-icon{
+.container__table__telegram-insta__telegram-icon{
     width: 25px;
     height: 25px;
     margin-top: 200px;
     
 }
-.instagram-icon{
+.container__table__telegram-insta__instagram-icon{
     width: 25px;
     height: 25px;
     margin-top: 200px;
 }
-.gmail-icon{
+.container__table__phone-email__gmail-icon{
     width: 25px;
     height: 25px;
     margin-left: 20px;
     margin-top: 5px;
 }
-.table{
+.container__table{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -367,7 +354,6 @@ header,nav{
     font-size: 1em;
     padding-left: 80px;
 }
-
 
 
 
@@ -382,16 +368,16 @@ header,nav{
 \*------------------------------------*/
 
     
-    .all{
+    .container__all{
         display: flex;
         flex-direction: column-reverse;
     }
-    .photo-1{
+    .container__all__photo-1{
         width: 250px;
         height: 350px;
         padding-left: 30px;
     }
-    .audio-intro{
+    .container__all__audio-intro{
         text-align: center;
         padding-top: 10px;
     }
@@ -399,62 +385,52 @@ header,nav{
     #ABOUT ME
 \*------------------------------------*/
 
-    .image-introduction{
+    .container__image-introduction{
         display: flex;
         flex-direction: column;
     }
-    .photo-2{
+    .container__image-introduction__photo-2{
         height: 450px;
         align-items: center;
         margin:auto;
         padding-top: 15px;
        
     }
-    .introduction{
+    .container__image-introduction__introduction{
         text-align: center;
     }
 /*------------------------------------*\
     #EXPERIENCE & SKILLS
 \*------------------------------------*/
 
-    .experience, .exp{
+    .container__experience-skills__experience, .container__experience-skills__experience__exp{
         font-size:medium;
         text-align: left;
     }
-    .skills, h2{
+    .container__experience-skills__skills, h2{
         text-align: center;
     }
 /*------------------------------------*\
     #PROJECTS
 \*------------------------------------*/
 
-    .image-container{
+    .container__image-container{
         display: flex;
         flex-direction: column;
     }
-    .project-1{
-        width: 150px;
-        height: 400px;
-        margin-left: 40px;
+    .container__image-container__row-2__img__project-3{
+        width: 100px;
+        height: 200px;
+        margin-top: 40px;
+        
     }
-    .project-2{
-        width: 150px;
-        height: 400px;
-    }
-    .project-3{
-        width: 150px;
-        height: 400px;
-        margin-top: 60px;
-        margin-left: 40px ;
-    }
-    .video{
-        width: 150px;
-        height: 400px;
-        margin-top: 60px; 
+    .container__image-container__row-2__youtube-vid__video{
+        width: 100px;
+        height: 200px;
+        margin-top: 50px; 
     }
     
 }
-
 
 
 
@@ -463,8 +439,8 @@ header,nav{
   #SECTION-PHONE LANDSCAPE MODE
 \*------------------------------------*/
 
-@media screen and (min-width: 600px){
-    .menu{
+@media screen and (orientation: landscape){
+    .container__header__navigation__menu{
         display: block;
         justify-content: start;
         flex-direction: column;
@@ -474,7 +450,7 @@ header,nav{
         right: 10px;
         background-color:#E1C78F;
         width: 130px;
-        height: 550px;
+        height: 480px;
         padding-top: 0px;
         opacity: 1;
         transition: opacity 0.5s;
@@ -482,39 +458,39 @@ header,nav{
         box-shadow: 0.5s;
 
     }
-    .menu:hover {
+    .container__header__navigation__menu:hover {
         background-color: #B78E4F;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) inset;
     }
-    .menu li{
+    .container__header__navigation__menu li{
         width:100%;
         height: fit-content;
     }
-    .menu li a,
-    .menu li a:hover {
+    .container__header__navigation__menu li a,
+    .container__header__navigation__menu li a:hover {
         padding: 20px;
         font-size: 18px;
         box-shadow: 0 1px 0 rgba(255,255,255,0.1)
         inset;
     }
-    .hamburger {
+    .container__header__navigation__hamburger {
         display: none;
     }
 /*------------------------------------*\
     #HOME
 \*------------------------------------*/
 
-    .all{
+    .container__all{
         display: flex;
         flex-direction: column-reverse;
     }
-    .photo-1{
+    .container__all__photo-1{
         width: 220px;
         height: 350px;
         padding-left: 20px;
         margin-right: 50px;
     }
-    .audio-intro{
+    .container__all__audio-intro{
         text-align: center;
         padding-top: 10px;
     }
@@ -522,16 +498,16 @@ header,nav{
     #ABOUT ME
 \*------------------------------------*/
 
-    .image-introduction{
+    .container__image-introduction{
         display: flex;
         flex-direction: column;
     }
-    .photo-2{
+    .container__image-introduction__photo-2{
         align-items: center;
         margin:auto;
         padding-top: 5px;
     }
-    .introduction{
+    .container__image-introduction__introduction{
         text-align: center;
         font-size: 1rem;
     }
@@ -539,74 +515,70 @@ header,nav{
     #EXPERIENCE & SKILLS
 \*------------------------------------*/
 
-    .experience, .exp{
+    .container__experience-skills__experience, .container__experience-skills__experience__exp{
         font-size:0.8rem;
         text-align: left;
         margin-right: 200px;
     }
-    .skills, h2{
+    .container__experience-skills__skills, h2{
         text-align: center;
     }
 /*------------------------------------*\
     #PROJECTS
 \*------------------------------------*/
 
-    .image-container{
+    .container__image-container{
         display: flex;
         flex-direction: column;
     }
-    .project-1{
-        width: 200px;
-        height: 400px;
+    .container__image-container__row-1{
+        display: flex;
+        flex-direction: row;
     }
-    .project-2{
-        width: 200px;
-        height: 400px;
+    .container__image-container__row-2__img__project-3{
+        width: 100px;
+        height: 200px;
+        margin-top: 30px;
     }
-    .project-3{
-        width: 200px;
-        height: 400px;
-        margin-top: 100px;
-    }
-    .video{
-        width: 200px;
-        height: 400px; 
+    .container__image-container__row-2__youtube-vid__video{
+        width: 100px;
+        height: 200px;
+        margin-top: 40px; 
     }
 /*------------------------------------*\
     #CONTACT ME
 \*------------------------------------*/
 
-    .table {
+    .container__table {
         display: block;
         margin: 0 auto;
         width: 80%;
     }
 
-    .table tr {
+    .container__table tr {
         display: flex;
         justify-content: space-between;
     }
-    .table td {
+    .container__table td {
         padding: 5px;
     }
 
-    .table .phone-email, 
-    .table .telegram-insta {
+    .container__table__phone-email, 
+    .container__table__telegram-insta{
         width: 100%;
     }
 
-    .table .phone-icon, 
-    .table .gmail-icon {
+    .container__table__phone-email__phone-icon, 
+    .container__table__phone-email__gmail-icon {
         margin-right: 10px;
     }
 
-    .table .telegram-icon, 
-    .table .instagram-icon {
+    .container__table__telegram-insta__telegram-icon, 
+    .container__table__telegram-insta__instagram-icon {
         margin-left: 10px;
     }
 
 }
-
 
 
 
@@ -623,45 +595,45 @@ header,nav{
     body{
         height: 100%;
     }
-    .all{
+    .container__all{
         display: flex;
         flex-direction: row;
         
     }
     
-    .nav{
+    .container__header__navigation{
         align-items: end;
     }
 
-    .photo-1{
+    .container__all__photo-1{
         width: 220px;
         height: 300px;
         padding-top: 30px;
         margin-right: 170px;
     }
-    .audio-intro{
+    .container__all__audio-intro{
         padding-top: 30px;
         padding-right: 40px;
     }
-    .intro{
+    .container__all__audio-intro__intro{
         text-align: left; 
     }
-    .foot{
+    .container__foot{
         text-align: center;
     }
 /*------------------------------------*\
     #ABOUT ME
 \*------------------------------------*/
-    .image-introduction{
+    .container__image-introduction{
         display: flex;
         flex-direction: row;
     }
-    .photo-2{
+    .container__image-introduction__photo-2{
         width: 250px;
         height: 350px;
 
     }
-    .introduction{
+    .container__image-introduction__introduction{
         text-align: center;
         width: 70%;
         padding-top: 50px;
@@ -671,46 +643,46 @@ header,nav{
 /*------------------------------------*\
     #EXPERIENCE & SKILLS
 \*------------------------------------*/
-    .experience, .exp{
+    .container__experience-skills__experience, .container__experience-skills__experience__exp{
         font-size:0.8rem;
         text-align: left;
         margin-right: 200px;
     }
 
-    .skills, h2{
+    .container__experience-skills__skills, h2{
         text-align: center;
     }
 /*------------------------------------*\
     #PROJECTS
 \*------------------------------------*/
-    .img{
+    .container__image-container__row-1__img, .container__image-container__row-2__img{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .img, .project-1, .project-2, .project-3{
+    .container__image-container__row-1__img, .container__image-container__row-2__img, .container__image-container__row-1__img__project-1, .container__image-container__row-1__img__project-2, .container__image-container__row-2__img__project-3{
         width: 150px;
         height: 300px;
         margin-left: 60px;
     }   
-   .image-container{
+   .container__image-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
    }
-   .project-3{
-        margin-top: 30px;
+   .container__image-container__row-2__img__project-3{
+        margin-top: 0px;
    }
-   .youtube-vid{
+   .container__image-container__row-2__youtube-vid{
         float: left;
         text-align: center;
         width: 250px;
         height: 900px;
    }
-   .caption{
+   .container__image-container__row-2__youtube-vid__video__caption{
         margin-right: 100px;
    }
-   .video{
+   .container__image-container__row-2__youtube-vid__video{
         width: 400px;
         height: 400px;
         margin-top: 400px;
@@ -720,32 +692,36 @@ header,nav{
 /*------------------------------------*\
     #CONTACT ME
 \*------------------------------------*/
-    .table {
+.container__table {
     display: block;
     margin: 0 auto;
     width: 80%;
-    }
-    .table tr {
-    display: flex;
-    justify-content: space-between;
-    }
-    .table td {
-    padding: 5px;
-    }
-    .table .phone-email,
-    .table .telegram-insta {
-    width: 100%;
-    }
-    .table .phone-icon,
-    .table .gmail-icon {
-    margin-right: 10px;
-    }
-    .table .telegram-icon,
-    .table .instagram-icon {
-    margin-left: 10px;
-    }
 }
 
+.container__table tr {
+    display: flex;
+    justify-content: space-between;
+}
+.container__table td {
+    padding: 5px;
+}
+
+.container__table__phone-email, 
+.container__table__telegram-insta{
+    width: 100%;
+}
+
+.container__table__phone-email__phone-icon, 
+.container__table__phone-email__gmail-icon {
+    margin-right: 10px;
+}
+
+.container__table__telegram-insta__telegram-icon, 
+.container__table__telegram-insta__instagram-icon {
+    margin-left: 10px;
+}
+
+}
 
 
 
@@ -761,43 +737,43 @@ header,nav{
     body{
         height: 100%;
     }
-    .all{
+    .container__all{
         display: flex;
         flex-direction: row;
         
     }
     
-    .nav{
+    .container__header__navigation{
         align-items: end;
     }
 
-    .photo-1{
+    .container__all__photo-1{
         width: 300px;
         height: 350px;
     }
-    .audio-intro{
+    .container__all__audio-intro{
         padding-top: 30px;
         padding-right: 40px;
     }
-    .intro{
+    .container__all__audio-intro__intro{
         text-align: left; 
     }
-    .foot{
+    .container__foot{
         text-align: center;
     }
 /*------------------------------------*\
     #ABOUT ME
 \*------------------------------------*/
-    .image-introduction{
+    .container__image-introduction{
         display: flex;
         flex-direction: row;
     }
-    .photo-2{
+    .container__image-introduction__photo-2{
         width: 350px;
         height: 450px;
 
     }
-    .introduction{
+    .container__image-introduction__introduction{
         text-align: center;
         width: 70%;
         padding-top: 50px;
@@ -806,60 +782,60 @@ header,nav{
 /*------------------------------------*\
     #EXPERIENCE & SKILLS
 \*------------------------------------*/
-    .experience-skills{
+    .container__experience-skills{
         display: flex;
         flex-direction: row;
     }
-    .experience{
+    .container__experience-skills__experience{
         display: flex;
         flex-direction: column;
         padding-right: 5px;
         font-size: medium;
     }
-   .hardworking-photo{
+   .container__experience-skills__experience__hardworking-photo{
         padding-left: 70px;
         width: 200px;
         height: 200px;
    }
-   .venn{
+   .container__experience-skills__skills__venn{
         margin-right: 200px;
    }
-   .skills, h2{
+   .container__experience-skills__skills, h2{
         text-align: left;
    }
 /*------------------------------------*\
     #PROJECTS
 \*------------------------------------*/
    
-   .img{
+   .container__image-container__row-1__img, .container__image-container__row-2__img{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     
    }
-   .image-container{
+   .container__image-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
    }
-   .img,.project-1, .project-2, .project-3{
+   .container__image-container__row-1__img, .container__image-container__row-2__img, .container__image-container__row-1__img__project-1, .container__image-container__row-1__img__project-2, .container__image-container__row-2__img__project-3{
         width: 200px;
         height: 400px;
         margin-left: 70px;
    }
-   .project-3{
-        margin-top: 30px;
+   .container__image-container__row-2__img__project-3{
+        margin-top: 0px;
    }
-   .youtube-vid{
+   .container__image-container__row-2__youtube-vid{
         float: left;
         text-align: center;
         width: 200px;
         height: 1000px;
    }
-   .caption{
+   .container__image-container__row-2__youtube-vid__video__caption{
         width: 2px;
    }
-   .video{
+   .container__image-container__row-2__youtube-vid__video{
         width: 400px;
         height: 400px;
         margin-top: 500px;
@@ -868,23 +844,32 @@ header,nav{
 /*------------------------------------*\
     #CONTACT ME
 \*------------------------------------*/
-   .table tr {
+.container__table {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container__table tr {
     display: flex;
     justify-content: space-between;
-    }
-    .table td {
+}
+.container__table td {
     padding: 5px;
-    }
-    .table .phone-email,
-    .table .telegram-insta {
+}
+
+.container__table__phone-email, 
+.container__table__telegram-insta{
     width: 100%;
-    }
-    .table .phone-icon,
-    .table .gmail-icon {
+}
+
+.container__table__phone-email__phone-icon, 
+.container__table__phone-email__gmail-icon {
     margin-right: 10px;
-    }
-    .table .telegram-icon,
-    .table .instagram-icon {
+}
+
+.container__table__telegram-insta__telegram-icon, 
+.container__table__telegram-insta__instagram-icon {
     margin-left: 10px;
-    }
+}
 }

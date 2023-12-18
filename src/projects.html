@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <header><h2>Projects</h2>
-            <div class="navigation">
-                <input type="checkbox" class="toggle-menu ">
-                <div class="hamburger"></div>
+        <header class="container__header"><h2>Projects</h2>
+            <div class="container__header__navigation">
+                <input type="checkbox" class="container__header__navigation__toggle-menu ">
+                <div class="container__header__navigation__hamburger"></div>
 
-                <ul class="menu">
+                <ul class="container__header__navigation__menu">
 
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="./aboutme.html">About me</a></li>
@@ -21,38 +21,41 @@
                     <li><a href="./Contactme.html">Contact me</a></li>
 
                 </ul>
+                <a href="javascript:void(0);" class="container__header__navigation__menu__icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
 
             </div>
         </header>
-        <hr class="horizontal-line">
+        <hr class=" container__horizontal-line">
         
-        <div class="image-container">
+        <div class="container__image-container">
 
-                <div class="row-1">
+                <div class="container__image-container__row-1">
            
-                    <figure class="img">
-                    <img  class="project-1" src="images/project1flowershopwebsite.jpg" alt="flower shop website">
+                    <figure class="container__image-container__row-1__img">
+                    <img  class="container__image-container__row-1__img__project-1" src="images/project1flowershopwebsite.jpg" alt="flower shop website">
                     <figcaption>Jenstore Flower shop</figcaption></figure>
             
 
-                    <figure class="img">
-                    <img class="project-2" src="images/project2coffeeshopwebsite.jpg" alt="coffee shop website">
+                    <figure class="container__image-container__row-1__img">
+                    <img class="container__image-container__row-1__img__project-2" src="images/project2coffeeshopwebsite.jpg" alt="coffee shop website">
                     <figcaption>Flavored Coffee</figcaption></figure>
 
                 </div>
 
-                <div class="row-2">
+                <div class="container__image-container__row-2">
 
-                    <figure class="img">
-                    <img class="project-3" src="images/project3eventplannig.jpg" alt="event planning website">
+                    <figure class="container__image-container__row-2__img">
+                    <img class="container__image-container__row-2__img__project-3" src="images/project3eventplannig.jpg" alt="event planning website">
                     <figcaption>Elevate Decor</figcaption></figure>
             
         
                 
-                    <div class="youtube-vid">    
+                    <div class="container__image-container__row-2__youtube-vid">    
                         <figure>
-                        <iframe class="video" src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <figcaption class="caption">Avis car rental</figcaption>
+                        <iframe class="container__image-container__row-2__youtube-vid__video" src="https://www.youtube.com/embed/Mi0ZWuecT0Q?si=rYMR4hcV-ciAatKu" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <figcaption class="container__image-container__row-2__youtube-vid__video__caption">Avis car rental</figcaption>
                         </figure>
 
                     </div>
@@ -60,13 +63,13 @@
                 </div>
         </div>
         
-        <hr class="horizontal-line">            
-        <footer>
+        <hr class="container__horizontal-line">            
+        <footer class="container__foot">
             <a href="contactme.html">Contact Me</a>
         </footer>
     
     </div>
-        
+    <script src="index.js"></script>     
     
 </body>
 </html>

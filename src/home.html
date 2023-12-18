@@ -8,13 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <header><h2>Home</h2>
+        <header class="container__header"><h2>Home</h2>
 
-            <div class="navigation">
-                <input type="checkbox" class="toggle-menu ">
-                <div class="hamburger"></div>
+            <div class="container__header__navigation">
+                <input type="checkbox" class="container__header__navigation__toggle-menu ">
+                <div class="container__header__navigation__hamburger"></div>
 
-                <ul class="menu">
+                <ul class="container__header__navigation__menu">
 
                     <li><a href="./Aboutme.html">About me</a></li>
                     <li><a href="./experience&skills.html">Experience & Skills</a></li>
@@ -22,19 +22,22 @@
                     <li><a href="./Contactme.html">Contact me</a></li>
 
                 </ul>
+                <a href="javascript:void(0);" class="container__header__navigation__menu__icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </div>
         </header>
         
         
-        <hr class="horizontal-line">
-        <div class="all">
-        <div class="audio-intro">
+        <hr class="container__horizontal-line">
+        <div class="container__all">
+        <div class="container__all__audio-intro">
 
             <audio controls>
                 <source src="images/hello-female-friendly-professional-87141.mp3" type="audio/mp3">
             </audio>
     
-            <div class="intro">
+            <div class="container__all__audio-intro__intro">
 
             <p>Hello, I'm Bethel.</p>
             <p>I'm a web designer and developer.</p>
@@ -43,19 +46,19 @@
             </div>
         </div>
 
-        <img class="photo-1" src="images/photo1.jpg" alt= "animated photo">
+        <img class="container__all__photo-1" src="images/photo1.jpg" alt= "animated photo">
 
         <br>
         </div>
     <br>
 
-    <hr class="horizontal-line">
+    <hr class="container__horizontal-line">
 
-        <footer class="foot">
+        <footer class="container__foot">
         <a href="contactme.html">Contact Me</a>
         </footer>
 
     </div>
-    
+    <script src="index.js"></script>
 </body>
 </html>

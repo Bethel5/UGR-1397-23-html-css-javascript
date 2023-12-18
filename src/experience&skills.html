@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <header><h2>Experience & Skills</h2>
-            <div class="navigation">
-                <input type="checkbox" class="toggle-menu ">
-                <div class="hamburger"></div>
+        <header class="container__header"><h2>Experience & Skills</h2>
+            <div class="container__header__navigation">
+                <input type="checkbox" class="container__header__navigation__toggle-menu ">
+                <div class="container__header__navigation__hamburger"></div>
 
-                <ul class="menu">
+                <ul class="container__header__navigation__menu">
 
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="./aboutme.html">About me</a></li>
@@ -21,41 +21,46 @@
                     <li><a href="./Contactme.html">Contact me</a></li>
 
                 </ul>
+                <a href="javascript:void(0);" class="container__header__navigation__menu__icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
 
             </div>
         </header>
-        <hr class="horizontal-line">
-        <div class="experience-skills">
+        <hr class="container__horizontal-line">
+        <div class="container__experience-skills">
 
-        <div class="experience">
+        <div class="container__experience-skills__experience">
             
             <ul>
 
-                <h2 class="exp">Experience</h2>
+                <h2 class="container__experience-skills__experience__exp">Experience</h2>
                 <li>Collaborating with clients to determine website requirements and goals..</li>
                 <li>Designing website layouts and user interfaces using tools like Adobe Photoshop, figma or Sketch. </li>
                 <li>Writing HTML, CSS, and JavaScript code to implement website designs.</li>
                 <li>Troubleshooting technical issues and bugs in website functionality.</li>
 
             </ul>
+            
 
-            <img class="hardworking-photo" id="work" src="images/hardworkingphoto.jpg" alt="workspace photo">
+            <img class="container__experience-skills__experience__hardworking-photo" id="work" src="images/hardworkingphoto.jpg" alt="workspace photo">
         </div>
         <br>
-        <div class="skills">
+        <div class="container__experience-skills__skills">
 
             <h2>Skills</h2>
-            <img class="venn" src="images/venndiagram2x.png" alt="venn diagram">
+            <img class="container__experience-skills__skills__venn" src="images/venndiagram2x.png" alt="venn diagram">
             
             
         </div>
         </div>
-        <hr class="horizontal-line">
+        <hr class="container__horizontal-line">
 
         <footer>
             <a href="contactme.html">Contact Me</a>
         </footer>
 
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

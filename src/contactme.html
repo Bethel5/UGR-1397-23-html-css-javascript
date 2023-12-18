@@ -8,46 +8,49 @@
 </head>
 <body>
     <div class="container">
-        <header><h2>Contact Me</h2>
-            <div class="navigation">
-                <input type="checkbox" class="toggle-menu ">
-                <div class="hamburger"></div>
-                <ul class="menu">
+        <header class="container__header"><h2>Contact Me</h2>
+            <div class="container__header__navigation">
+                <input type="checkbox" class="container__header__navigation__toggle-menu ">
+                <div class="container__header__navigation__hamburger"></div>
+                <ul class="container__header__navigation__menu">
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="./aboutme.html">About me</a></li>
                     <li><a href="./experience&skills.html">Experience & Skills</a></li>
                     <li><a href="./projects.html">Projects</a></li>
                 </ul>
+                <a href="javascript:void(0);" class="container__header__navigation__menu__icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
             </div>
         </header>
-        <hr class="horizontal-line">
+        <hr class="container__horizontal-line">
         <br>
             <h3>Get in touch with me!</h3>
         <br>
-        <hr class="horizontal-line">
-        <div class="table">
+        <hr class="container__horizontal-line">
+        <div class="container__table">
         
             <table>
 
-                <div class="phone-email">
+                <div class="container__table__phone-email">
                     <tr>
                         <td>
-                            <img class="phone-icon" src="images/phoneicon.png" alt="phone icon">+251900000000
+                            <img class="container__table__phone-email__phone-icon" src="images/phoneicon.png" alt="phone icon">+251900000000
                         </td>
                         <td>
-                            <img class="gmail-icon" src="images/gmailicon.png" alt="gmail icon">betheldereje5@gmail.com
+                            <img class="container__table__phone-email__gmail-icon" src="images/gmailicon.png" alt="gmail icon">betheldereje5@gmail.com
                         </td>
                     <tr>
                 </div>
 
-                <div class="telegram-insta">
+                <div class="container__table__telegram-insta">
 
                     <tr>
                         <td>
-                            <img class="telegram-icon" src="images/telegramicon.png" alt="telegram icon">@b_e_th_e_l
+                            <img class="container__table__telegram-insta__telegram-icon" src="images/telegramicon.png" alt="telegram icon">@b_e_th_e_l
                         </td>
                         <td>
-                            <img class="instagram-icon" src="images/instagramicon.png" alt="instagram icon">@b_e_th_e_l
+                            <img class="container__table__telegram-insta__instagram-icon" src="images/instagramicon.png" alt="instagram icon">@b_e_th_e_l
                         </td>
                     </tr>                
                 </div>   
@@ -55,10 +58,11 @@
             </table>
         </div>
         <br>
-        <hr class="horizontal-line">
-        <footer>
+        <hr class="container__horizontal-line">
+        <footer class="container__foot">
             <a href="contactme.html">Contact Me</a>
         </footer>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
